@@ -1,16 +1,11 @@
-let cadenas = [];
+let texto = "";
+let cadena;
 
-while (true) {
-  let cadena = prompt("Introduce una cadena de texto (o 'cancelar' para salir):");
-  if (cadena === null || cadena.toLowerCase() === "cancelar") {
-    break;
+do {
+  cadena = prompt("Introduce una cadena de texto:");
+  if (cadena !== null) {
+    texto += cadena + "-";
   }
-  cadenas.push(cadena);
-}
+} while (cadena !== null);
 
-if (cadenas.length > 0) {
-  let resultado = cadenas.join(" - ");
-  console.log("Cadenas introducidas: " + resultado);
-} else {
-  console.log("No se han introducido cadenas.");
-}
+alert("Las cadenas introducidas son: " + texto.slice(0, -1));

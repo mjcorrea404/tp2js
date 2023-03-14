@@ -11,7 +11,7 @@ while (true) {
 
   
   if (isNaN(input)) {
-    alert("Por favor, introduce un valor numérico válido.");
+    alert("Por favor, introduce un numero válido.");
     continue;
   }
 
